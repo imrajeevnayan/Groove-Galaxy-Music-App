@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groove Galaxy - Music for Everyone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#1DB954',
+                        },
+                        secondary: {
+                            500: '#535353',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-gray-900 px-4 py-3 flex items-center justify-between sticky top-0 z-50">
+        <div class="flex items-center space-x-4">
+            <i data-feather="music" class="text-primary-500"></i>
+            <h1 class="text-xl font-bold">Groove Galaxy</h1>
+        </div>
+        <div class="flex items-center space-x-6">
+            <a href="#" class="hover:text-primary-500 transition">Premium</a>
+            <a href="#" class="hover:text-primary-500 transition">Support</a>
+            <a href="#" class="hover:text-primary-500 transition">Download</a>
+            <div class="w-px h-6 bg-gray-700"></div>
+            <div class="flex items-center space-x-2">
+                <i data-feather="user" class="w-5 h-5"></i>
+                <span>Profile</span>
+                <i data-feather="chevron-down" class="w-4 h-4"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="px-6 py-8">
+        <!-- Hero Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6">Welcome back</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Featured Playlist Cards -->
+                <div class="bg-secondary-500/30 rounded-lg p-4 hover:bg-secondary-500/50 transition cursor-pointer group">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d00001e023d29cbdaf500d735492c693b" alt="The Fate of Ophelia" class="rounded w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold truncate">The Fate of Ophelia</h3>
+                    <p class="text-gray-400 text-sm truncate">Taylor Swift</p>
+                </div>
+                <div class="bg-secondary-500/30 rounded-lg p-4 hover:bg-secondary-500/50 transition cursor-pointer group">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02356346f2c42065bc248aca3e" alt="Days Like These" class="rounded w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold truncate">Days Like These</h3>
+                    <p class="text-gray-400 text-sm truncate">Luke Combs</p>
+                </div>
+                <div class="bg-secondary-500/30 rounded-lg p-4 hover:bg-secondary-500/50 transition cursor-pointer group">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02632dd8d25a520d3855cb26a2" alt="Just How You Are" class="rounded w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold truncate">Just How You Are</h3>
+                    <p class="text-gray-400 text-sm truncate">Leon Thomas</p>
+                </div>
+                <div class="bg-secondary-500/30 rounded-lg p-4 hover:bg-secondary-500/50 transition cursor-pointer group">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02d3d348889111b2b5e80073bc" alt="Pretty Promises" class="rounded w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold truncate">Pretty Promises</h3>
+                    <p class="text-gray-400 text-sm truncate">Kali Uchis, Mariah the Scientist</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Songs Section -->
+        <section class="mb-12">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold">Trending songs</h2>
+                <a href="#" class="text-sm text-gray-400 hover:text-white transition">Show all</a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Trending Song Cards -->
+                <div class="bg-secondary-500/30 rounded-lg p-4 hover:bg-secondary-500/50 transition cursor-pointer group">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d00001e027153bd357d54db2318cf1ac5" alt="you're a star" class="rounded w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold truncate">you're a star</h3>
+                    <p class="text-gray-400 text-sm truncate">Fred again.., Amyl and The Sniffers</p>
+                </div>
+                <div class="bg-secondary-500/30 rounded-lg p-4 hover:bg-secondary-500/50 transition cursor-pointer group">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d00001e0260d64cd2089dbefeced9a824" alt="Meiomi" class="rounded w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold truncate">Meiomi</h3>
+                    <p class="text-gray-400 text-sm truncate">Young Miko</p>
+                </div>
+                <div class="bg-secondary-500/30 rounded-lg p-4 hover:bg-secondary-500/50 transition cursor-pointer group">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d00001e025b01657fd65722737d47263a" alt="I Need Her" class="rounded w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold truncate">I Need Her</h3>
+                    <p class="text-gray-400 text-sm truncate">Bryson Tiller</p>
+                </div>
+                <div class="bg-secondary-500/30 rounded-lg p-4 hover:bg-secondary-500/50 transition cursor-pointer group">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d00001e021531c1cfcd24ed31a213936a" alt="Unspoken" class="rounded w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold truncate">Unspoken</h3>
+                    <p class="text-gray-400 text-sm truncate">Kane Brown</p>
+                </div>
+                <div class="bg-secondary-500/30 rounded-lg p-4 hover:bg-secondary-500/50 transition cursor-pointer group">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616d00001e020d81acb6840169eeb1d9f645" alt="Dancing in the Smoke" class="rounded w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold truncate">Dancing in the Smoke</h3>
+                    <p class="text-gray-400 text-sm truncate">GIVĒON</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Artists Section -->
+        <section class="mb-12">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold">Popular artists</h2>
+                <a href="#" class="text-sm text-gray-400 hover:text-white transition">Show all</a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Artist Cards -->
+                <div class="text-center">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab6761610000517439ba6dcd4355c03de0b50918" alt="Kendrick Lamar" class="rounded-full w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold">Kendrick Lamar</h3>
+                    <p class="text-gray-400 text-sm">Artist</p>
+                </div>
+                <div class="text-center">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab676161000051744293385d324db8558179afd9" alt="Drake" class="rounded-full w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold">Drake</h3>
+                    <p class="text-gray-400 text-sm">Artist</p>
+                </div>
+                <div class="text-center">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab676161000051749e528993a2820267b97f6aae" alt="The Weeknd" class="rounded-full w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold">The Weeknd</h3>
+                    <p class="text-gray-400 text-sm">Artist</p>
+                </div>
+                <div class="text-center">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab676161000051744245b1652fcc23f2b76ccd07" alt="Morgan Wallen" class="rounded-full w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold">Morgan Wallen</h3>
+                    <p class="text-gray-400 text-sm">Artist</p>
+                </div>
+                <div class="text-center">
+                    <div class="relative mb-4">
+                        <img src="https://i.scdn.co/image/ab67616100005174e17c0aa1714a03d62b5ce4e0" alt="Post Malone" class="rounded-full w-full aspect-square object-cover">
+                        <button class="absolute bottom-2 right-2 bg-primary-500 rounded-full p-3 opacity-0 hover:opacity-100 transition-opacity shadow-lg">
+                            <i data-feather="play" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <h3 class="font-bold">Post Malone</h3>
+                    <p class="text-gray-400 text-sm">Artist</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Radio Section -->
+        <section class="mb-12">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold">Popular radio</h2>
+                <a href="#" class="text-sm text-gray-400 hover:text-white transition">Show all</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Radio Station Cards -->
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-4 hover:bg-gray-800 transition cursor-pointer">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4oUHIQIBe0LHzYfvXNW4QM/en" alt="Morgan Wallen Radio" class="rounded-full w-16 h-16 object-cover">
+                        <div>
+                            <h3 class="font-bold">Morgan Wallen Radio</h3>
+                            <p class="text-gray-400 text-sm">With Luke Combs, Bailey Zimmerman, Jordan Davis and more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-4 hover:bg-gray-800 transition cursor-pointer">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3TVXtAsR1Inumwj472S9r4/en" alt="Drake Radio" class="rounded-full w-16 h-16 object-cover">
+                        <div>
+                            <h3 class="font-bold">Drake Radio</h3>
+                            <p class="text-gray-400 text-sm">With PARTYNEXTDOOR, DJ Khaled, Rick Ross and more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-4 hover:bg-gray-800 transition cursor-pointer">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/74KM79TiuVKeVCqs8QtB0B/en" alt="Sabrina Carpenter Radio" class="rounded-full w-16 h-16 object-cover">
+                        <div>
+                            <h3 class="font-bold">Sabrina Carpenter Radio</h3>
+                            <p class="text-gray-400 text-sm">With Chappell Roan, Tate McRae, Olivia Rodrigo and more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-4 hover:bg-gray-800 transition cursor-pointer">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/06HL4z0CvFAxyc27GXpf02/en" alt="Taylor Swift Radio" class="rounded-full w-16 h-16 object-cover">
+                        <div>
+                            <h3 class="font-bold">Taylor Swift Radio</h3>
+                            <p class="text-gray-400 text-sm">With Olivia Rodrigo, Harry Styles, Chappell Roan and more</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 px-6 py-8 mt-12">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Jobs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">For the Record</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Communities</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">For Artists</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Developers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Advertising</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Investors</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Useful links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Free Mobile App</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Import your music</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Spotify Plans</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Premium Individual</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Premium Duo</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Premium Family</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Premium Student</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-6 border-t border-gray-800 text-center text-gray-400">
+                <p>© 2025 Groove Galaxy AB</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Now Playing Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center space-x-4 w-1/4">
+            <img src="https://i.scdn.co/image/ab67616d00001e023d29cbdaf500d735492c693b" alt="Now Playing" class="w-12 h-12 rounded">
+            <div>
+                <h4 class="font-bold text-sm">The Fate of Ophelia</h4>
+                <p class="text-gray-400 text-xs">Taylor Swift</p>
+            </div>
+            <button class="text-gray-400 hover:text-white">
+                <i data-feather="heart" class="w-4 h-4"></i>
+            </button>
+        </div>
+        <div class="flex flex-col items-center w-2/4">
+            <div class="flex items-center space-x-6 mb-2">
+                <button class="text-gray-400 hover:text-white">
+                    <i data-feather="shuffle" class="w-4 h-4"></i>
+                </button>
+                <button class="text-gray-400 hover:text-white">
+                    <i data-feather="skip-back" class="w-4 h-4"></i>
+                </button>
+                <button class="bg-white text-black rounded-full p-2 hover:scale-105 transition">
+                    <i data-feather="play" class="w-4 h-4"></i>
+                </button>
+                <button class="text-gray-400 hover:text-white">
+                    <i data-feather="skip-forward" class="w-4 h-4"></i>
+                </button>
+                <button class="text-gray-400 hover:text-white">
+                    <i data-feather="repeat" class="w-4 h-4"></i>
+                </button>
+            </div>
+            <div class="w-full flex items-center space-x-2">
+                <span class="text-xs text-gray-400">1:23</span>
+                <div class="h-1 bg-gray-600 rounded-full flex-grow">
+                    <div class="h-1 bg-white rounded-full w-1/3"></div>
+                </div>
+                <span class="text-xs text-gray-400">3:45</span>
+            </div>
+        </div>
+        <div class="flex items-center justify-end space-x-4 w-1/4">
+            <button class="text-gray-400 hover:text-white">
+                <i data-feather="mic" class="w-4 h-4"></i>
+            </button>
+            <button class="text-gray-400 hover:text-white">
+                <i data-feather="list" class="w-4 h-4"></i>
+            </button>
+            <button class="text-gray-400 hover:text-white">
+                <i data-feather="monitor" class="w-4 h-4"></i>
+            </button>
+            <div class="flex items-center space-x-1">
+                <i data-feather="volume-2" class="w-4 h-4 text-gray-400"></i>
+                <div class="h-1 bg-gray-600 rounded-full w-16">
+                    <div class="h-1 bg-white rounded-full w-3/4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+/</html>
